@@ -25,6 +25,7 @@ with tf.Session()as sess:
 （2）tf.all_variables()#返回模型中所有的的变量
 （3）tf.trainanle_variables()#返回模型中可以训练的变量
 
+
 多分类采用与训练模型输出不匹配解决方法解决：
 利用tf.contrib.framework.get_variables_to_restore()函数
 variables_to_retore = tf.contrib.framework.get_variables_to_restore(exclude= ['wang'])
